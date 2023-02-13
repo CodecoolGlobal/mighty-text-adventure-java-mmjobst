@@ -23,7 +23,8 @@ public class Game {
     }
 
     private boolean step() {
-        display.printMessage("Steps");
+        String inputFromUser = input.getInputFromUser();
+        display.printMessage(inputFromUser);
         return true;
     }
 }
