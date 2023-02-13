@@ -1,16 +1,16 @@
 package com.codecool.mightytextadventure.logic;
 
-import com.codecool.mightytextadventure.data.Area;
+import com.codecool.mightytextadventure.data.Level;
 import com.codecool.mightytextadventure.ui.Display;
 import com.codecool.mightytextadventure.ui.Input;
 
 public class Game {
-    private final Area[] areas;
+    private final Level[] levels;
     private final Input input;
     private final Display display;
 
-    public Game(Area[] areas, Input input, Display display) {
-        this.areas = areas;
+    public Game(Level[] levels, Input input, Display display) {
+        this.levels = levels;
         this.input = input;
         this.display = display;
     }

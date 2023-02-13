@@ -1,8 +1,8 @@
 package com.codecool.mightytextadventure.data;
 
-public class Area {
+public class Level {
     private String description;
-    public Area(String description) {
+    public Level(String description) {
         this.description = description;
     }
 }

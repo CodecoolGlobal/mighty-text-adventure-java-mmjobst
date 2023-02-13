@@ -1,6 +1,6 @@
 package com.codecool.mightytextadventure;
 
-import com.codecool.mightytextadventure.data.Area;
+import com.codecool.mightytextadventure.data.Level;
 import com.codecool.mightytextadventure.logic.Game;
 import com.codecool.mightytextadventure.ui.Display;
 import com.codecool.mightytextadventure.ui.Input;
@@ -12,23 +12,23 @@ public class Application {
 
         display.printMessage("Starting Mighty Text Adventure!");
 
-        Area[] areas = loadAreas();
+        Level[] levels = loadAreas();
 
-        Game game = new Game(areas, input, display);
+        Game game = new Game(levels, input, display);
         game.run();
 
         display.printMessage("Exiting from Mighty Text Adventure!");
     }
 
-    private static Area[] loadAreas(){
-        Area[] areas =   new Area[7];
-        areas[0] = new Area("Start room");
-        areas[1] = new Area("Room 1");
-        areas[2] = new Area("Room 2");
-        areas[3] = new Area("Room 3");
-        areas[4] = new Area("Room 4");
-        areas[5] = new Area("Room 5");
-        areas[6] = new Area("Room 6");
-        return areas;
+    private static Level[] loadAreas(){
+        Level[] levels =   new Level[7];
+        levels[0] = new Level("Start room");
+        levels[1] = new Level("Room 1");
+        levels[2] = new Level("Room 2");
+        levels[3] = new Level("Room 3");
+        levels[4] = new Level("Room 4");
+        levels[5] = new Level("Room 5");
+        levels[6] = new Level("Room 6");
+        return levels;
     }
 }
