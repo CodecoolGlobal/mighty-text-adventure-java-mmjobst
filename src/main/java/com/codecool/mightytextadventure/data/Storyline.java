@@ -1,10 +1,13 @@
 package com.codecool.mightytextadventure.data;
 
 public enum Storyline {
-    AUFWACHEN("Du wachst im Inno-Lab auf, du weißt nicht wie du hiergekommen bist " +
-            "(vielleicht der letzte Wodka Wellness im Respawn?) " +
-            "aber du bist jetzt wohl bei CodeCool. " +
-            "Du lernst deine Mitstudierenden kennen und zwei sehr große Mentoren.")
+    HELLO("""
+            Wie heißt du?
+            """),
+    AUFWACHEN("""
+            du wachst im Inno-Lab auf, du weißt nicht wie du hierhergekommen bist
+            (vielleicht der letzte Wodka Wellness im Respawn?). Du bist jetzt wohl bei CodeCool.
+            Du lernst deine Mitstudierenden kennen und zwei sehr große Mentoren.""")
     ;
     private final String text;
 
