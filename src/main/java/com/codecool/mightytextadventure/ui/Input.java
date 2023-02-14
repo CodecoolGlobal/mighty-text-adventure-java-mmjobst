@@ -12,4 +12,11 @@ public class Input {
         String inputUser = scanner.nextLine();
         return inputUser;
     }
+
+    public String getActionFromUser() {
+        Scanner action = new Scanner(System.in);
+        String userAction = action.nextLine();
+        return userAction;
+    }
+
 }

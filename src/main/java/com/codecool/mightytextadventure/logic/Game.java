@@ -2,6 +2,7 @@ package com.codecool.mightytextadventure.logic;
 
 import com.codecool.mightytextadventure.data.Level;
 import com.codecool.mightytextadventure.data.Storyline;
+import com.codecool.mightytextadventure.data.Actions;
 import com.codecool.mightytextadventure.ui.Display;
 import com.codecool.mightytextadventure.ui.Input;
 
@@ -26,6 +27,14 @@ public class Game {
     private boolean step() {
         String inputFromUser = input.getInputFromUser(Storyline.HELLO.getText());
         System.out.println(inputFromUser + ", " + Storyline.AUFWACHEN.getText());
+
+        String actionFromUser = input.getActionFromUser();
+        actionFromUser = actionFromUser.toUpperCase();
+
+        if(actionFromUser.equals(Actions.UMSCHAUEN.toString())) {
+            System.out.println("actionFromUser = " + actionFromUser);
+            display.printMessage(Storyline.UMSCHAUEN.getText());
+        }
         return true;
     }
 }
