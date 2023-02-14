@@ -7,7 +7,11 @@ public enum Storyline {
     AUFWACHEN("""
             du wachst im Inno-Lab auf, du weißt nicht wie du hierhergekommen bist
             (vielleicht der letzte Wodka Wellness im Respawn?). Du bist jetzt wohl bei CodeCool.
-            Du lernst deine Mitstudierenden kennen und zwei sehr große Mentoren.""")
+            Du lernst deine Mitstudierenden kennen und zwei sehr große Mentoren."""),
+
+    UMSCHAUEN("""
+            Du schaust dich um, es gibt Tische, Stühle ... 
+            """)
     ;
     private final String text;
 
