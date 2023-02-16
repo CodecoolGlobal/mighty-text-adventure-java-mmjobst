@@ -28,17 +28,23 @@ public class Game {
         System.out.println(inputFromUser + ", " + Storyline.AUFWACHEN.getText());
 
         String actionFromUser = input.getActionFromUser();
-        actionFromUser = actionFromUser.toUpperCase();
 
-        ActionValidator actionValidator = new ActionValidator();
-        boolean validBool = actionValidator.actionValidator(actionFromUser);
+        ActionValidator inputValidator = new ActionValidator();
+        boolean validBool = inputValidator.actionValidator(actionFromUser);
         System.out.println("boolean: " + validBool);
 
 
         int level = 1;
-        ActionSelector actionSelector = new ActionSelector();
-        actionSelector.actionSelect(actionFromUser, level);
+        if (actionFromUser.equals("DOOR")) {
+            level += 1;
+        }
 
+        if(validBool) {
+            ActionSelector actionSelector = new ActionSelector();
+            actionSelector.actionSelect(actionFromUser, level);
+        } else {
+            System.out.println("fuck you");
+        }
 
         return true;
     }

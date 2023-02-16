@@ -16,6 +16,7 @@ public class Input {
     public String getActionFromUser() {
         Scanner action = new Scanner(System.in);
         String userAction = action.nextLine();
+        userAction = userAction.toUpperCase();
         return userAction;
     }
 
