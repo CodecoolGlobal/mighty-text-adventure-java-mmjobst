@@ -9,23 +9,23 @@ public enum Storyline {
             (vielleicht der letzte Wodka Wellness im Respawn?). Du bist jetzt wohl bei CodeCool.
             Du lernst deine Mitstudierenden kennen und zwei sehr große Mentoren."""),
 
-    UMSCHAUEN("""
+    UMSCHAUEN1("""
             Um dich herum sind andere Menschen, außerdem siehst du ein Sofa, ein paar Schreibtische und Sessel.
             Vor dir steht ein Notebook. Möchtest du mit jemandem REDEN oder zu etwas  GEHEN?
             """),
-    REDEN("""
+    REDEN1("""
             Im Raum befinden sich MARTIN, EMAD, MITSTUDIERENDE und du SELBST. Mit wem möchtest du reden?\s
             """),
-    EMAD("""
+    EMAD1("""
             "Every mistake you make is progress! Growth Mindset!"\n
             Möchtest du noch mit jemand anderem REDEN oder lieber zurück ins INNOLAB?
             """),
-    MARTIN("""
+    MARTIN1("""
             "Ich versuche, deinen Verstand zu befreien, Neo. Aber ich kann dir nur die Tür zeigen. 
             Hindurchgehen musst du alleine."\n
             Möchtest du noch mit jemand anderem REDEN oder lieber zurück ins INNOLAB?
             """),
-    MITSTUDIERENDE("""
+    MITSTUDIERENDE1("""
             "Hallo, I bin da Fleischi, woas is dei Lieblingsessen - vielleicht koch i es amal für di!"\n\n
             Möchtest du noch mit jemand anderem REDEN oder lieber zurück ins INNOLAB?
             """),
@@ -34,6 +34,14 @@ public enum Storyline {
             wie kann ich wissen ob meine Entscheidungen wirklich meine eigenen sind?"\n
             Möchtest du noch mit jemand anderem REDEN oder lieber zurück ins INNOLAB?
                """),
+    HELP ("""
+            Es ist immer gut nach Hilfe zu fragen! Hier die wichtigsten Eingaben für dich: 
+            INNOLAB - Du vermisst die gute alte Zeit im Prog Basic? Geh zurück ins INNOLAB!
+            REDEN - Du hast genug davon einsam und alleine zu programmieren oder 
+            möchtest den weisen Rat eines Mentors hören? Dann gilt für dich "REDEN ist Gold, schweigen ist langweilig!"
+            UMSCHAUEN - Du möchtest deine Umgebung besser kennenlernen, dann hilft UMSCHAUEN. Es ist immer gut zuerst einmal seine Möglichkeiten zu kennen, 
+            GEHEN - 10.000 Schritte am Tag ist dein Ziel? Dann starte deine Reise und geh zu den Dingen die dich interessieren!
+            """)
     ;
     private final String text;
 

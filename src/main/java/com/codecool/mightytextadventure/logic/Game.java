@@ -34,8 +34,10 @@ public class Game {
         boolean validBool = actionValidator.actionValidator(actionFromUser);
         System.out.println("boolean: " + validBool);
 
+
+        int level = 1;
         ActionSelector actionSelector = new ActionSelector();
-        actionSelector.actionSelect(actionFromUser);
+        actionSelector.actionSelect(actionFromUser, level);
 
 
         return true;

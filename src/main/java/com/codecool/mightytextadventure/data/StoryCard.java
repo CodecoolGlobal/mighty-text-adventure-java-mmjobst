@@ -1,35 +1,11 @@
 package com.codecool.mightytextadventure.data;
 
 public class StoryCard {
-     private Actions action;
-     private Storyline storyline;
-     private Level level;
-
-     public void goTo(Storyline storyline) {
-         System.out.println("text = " + storyline);
+     public String storyElement(String action, int lvl) {
+         Storyline storyLineEnum = Storyline.valueOf(action + lvl);
+         return storyLineEnum.getText();
      }
-
-     public void talkTo(Actions action) {
-         System.out.println("action = " + action);
+     public String help() {
+         return Storyline.HELP.getText();
      }
-
-     public String lookAround() {
-         return Storyline.UMSCHAUEN.getText();
-     }
-
-    public Actions getAction() {
-        return action;
-    }
-
-    public void setAction(Actions action) {
-        this.action = action;
-    }
-
-    public Storyline getStoryline() {
-        return storyline;
-    }
-
-    public void setStoryline(Storyline storyline) {
-        this.storyline = storyline;
-    }
 }
