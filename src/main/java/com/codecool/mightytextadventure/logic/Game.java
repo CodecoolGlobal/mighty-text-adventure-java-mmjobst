@@ -47,6 +47,9 @@ public class Game {
               if(inputFromUser.equals(Storyline.UMSCHAUEN.toString())) {
             display.printMessage(Storyline.UMSCHAUEN.getText());
         }
+        if(inputFromUser.equals(Storyline.INNOLAB.toString())) {
+            display.printMessage(Storyline.INNOLAB.getText());
+        }
 
         
         
