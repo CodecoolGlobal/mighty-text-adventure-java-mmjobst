@@ -31,10 +31,10 @@ public class Game {
         String actionFromUser = input.getActionFromUser();
         actionFromUser = actionFromUser.toUpperCase();
 
-        if(actionFromUser.equals(Actions.UMSCHAUEN.toString())) {
-            System.out.println("actionFromUser = " + actionFromUser);
-            display.printMessage(Storyline.UMSCHAUEN.getText());
-        }
+        ActionManager actionManager = new ActionManager();
+        boolean b = actionManager.actionValidator(actionFromUser);
+        System.out.println("boolean: " + b);
+
         return true;
     }
 }
