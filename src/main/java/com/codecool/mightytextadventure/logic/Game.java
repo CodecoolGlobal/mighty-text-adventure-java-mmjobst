@@ -35,13 +35,11 @@ public class Game {
         actionFromUser = actionFromUser.toUpperCase();
 
         ActionManager actionManager = new ActionManager();
-        StoryCard storyCard = new StoryCard();
-
         boolean validBool = actionManager.actionValidator(actionFromUser);
         System.out.println("boolean: " + validBool);
 
         ActionSelector actionSelector = new ActionSelector();
-        actionSelector.actionSelector(Actions.valueOf(actionFromUser));
+        actionSelector.actionSelector(actionFromUser);
 
 
 

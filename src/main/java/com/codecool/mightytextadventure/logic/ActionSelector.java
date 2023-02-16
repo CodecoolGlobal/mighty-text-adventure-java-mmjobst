@@ -7,19 +7,12 @@ import com.codecool.mightytextadventure.data.Storyline;
 public class ActionSelector {
     public String actionSelector(String actionFromUser) {
         StoryCard storyCard = new StoryCard();
-        System.out.println("input: " + actionFromUser);
+        System.out.println("actionselector input: " + actionFromUser);
 
-//        Storyline.UMSCHAUEN = Storyline.valueOf(actionFromUser)
+        if (actionFromUser.equals(Storyline.UMSCHAUEN.name())) {
+            return storyCard.lookAround();
+        }
 
-
-//            switch (actionFromUser) {
-//                case UMSCHAUEN:
-//                    return storyCard.lookAround();
-//                case GEHEN:
-//                    return null;
-//                case REDEN:
-//                    return "hallo";
-//            }
         return null;
     }
 

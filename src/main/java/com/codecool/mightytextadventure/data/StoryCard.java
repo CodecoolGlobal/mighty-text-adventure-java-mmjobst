@@ -13,8 +13,8 @@ public class StoryCard {
          System.out.println("action = " + action);
      }
 
-     public String lookAround() {
-         return String.valueOf(Storyline.UMSCHAUEN.getText());
+     public void lookAround() {
+         System.out.println(Storyline.UMSCHAUEN.getText());
      }
 
     public Actions getAction() {
