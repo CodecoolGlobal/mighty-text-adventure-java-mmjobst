@@ -2,7 +2,7 @@ package com.codecool.mightytextadventure.logic;
 
 import com.codecool.mightytextadventure.data.Level;
 import com.codecool.mightytextadventure.data.Storyline;
-import com.codecool.mightytextadventure.data.Actions;
+import com.codecool.mightytextadventure.data.Storyline;
 import com.codecool.mightytextadventure.ui.Display;
 import com.codecool.mightytextadventure.ui.Input;
 
@@ -25,16 +25,32 @@ public class Game {
     }
 
     private boolean step() {
-        String inputFromUser = input.getInputFromUser(Storyline.HELLO.getText());
-        System.out.println(inputFromUser + ", " + Storyline.AUFWACHEN.getText());
-
-        String actionFromUser = input.getActionFromUser();
-        actionFromUser = actionFromUser.toUpperCase();
-
-        if(actionFromUser.equals(Actions.UMSCHAUEN.toString())) {
-            System.out.println("actionFromUser = " + actionFromUser);
+//        display.printMessage(Storyline.HELLO.getText());
+        String inputFromUser = input.getInputFromUser().toUpperCase();
+//        if display.printMessage(inputFromUser + ", " + Storyline.AUFWACHEN.getText());
+//        inputFromUser = input.getInputFromUser().toUpperCase();
+        if(inputFromUser.equals(Storyline.REDEN.toString())) {
+            display.printMessage(Storyline.REDEN.getText());
+        }
+              if(inputFromUser.equals(Storyline.MARTIN.toString())) {
+            display.printMessage(Storyline.MARTIN.getText());
+        }
+              if(inputFromUser.equals(Storyline.EMAD.toString())) {
+            display.printMessage(Storyline.EMAD.getText());
+        }
+              if(inputFromUser.equals(Storyline.SELBST.toString())) {
+            display.printMessage(Storyline.SELBST.getText());
+        }
+              if(inputFromUser.equals(Storyline.MITSTUDIERENDE.toString())) {
+            display.printMessage(Storyline.MITSTUDIERENDE.getText());
+        }
+              if(inputFromUser.equals(Storyline.UMSCHAUEN.toString())) {
             display.printMessage(Storyline.UMSCHAUEN.getText());
         }
+
+        
+        
+        
         return true;
     }
 }

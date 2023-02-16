@@ -12,7 +12,7 @@ public class Application {
         Input input = new Input();
 
         display.printMessage("Starting Mighty Text Adventure!");
-
+display.printMessage("Type REDEN");
         Level[] levels = loadAreas();
 
         Game game = new Game(levels, input, display);
