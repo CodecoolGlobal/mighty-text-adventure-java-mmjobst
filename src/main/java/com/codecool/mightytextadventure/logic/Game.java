@@ -43,7 +43,7 @@ public class Game {
             ActionSelector actionSelector = new ActionSelector();
             actionSelector.actionSelect(actionFromUser, level);
         } else {
-            System.out.println("fuck you");
+            System.out.println("invalid input, try again");
         }
 
         return true;
