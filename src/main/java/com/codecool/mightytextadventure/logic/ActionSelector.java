@@ -5,15 +5,22 @@ import com.codecool.mightytextadventure.data.StoryCard;
 import com.codecool.mightytextadventure.data.Storyline;
 
 public class ActionSelector {
-    public String actionSelector(String actionFromUser) {
+    public void actionSelector(String actionFromUser) {
         StoryCard storyCard = new StoryCard();
-        System.out.println("actionselector input: " + actionFromUser);
+        Actions actionEnum = Actions.valueOf(actionFromUser); //String als argument und gibt uns das entsprechende enum object
 
-        if (actionFromUser.equals(Storyline.UMSCHAUEN.name())) {
-            return storyCard.lookAround();
+        switch (actionEnum) {
+            case UMSCHAUEN:
+                System.out.println(storyCard.lookAround());
+                break;
+            case REDEN:
+                System.out.println("reden");
+                break;
+            case GEHEN:
+                System.out.println("gehen");
+                break;
         }
 
-        return null;
     }
 
 }
