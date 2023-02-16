@@ -1,7 +1,7 @@
 package com.codecool.mightytextadventure.logic;
 import com.codecool.mightytextadventure.data.Actions;
 
-public class ActionManager {
+public class ActionValidator {
     public boolean actionValidator(String userAction) {
 //        System.out.println("userAction = " + userAction);
 

@@ -1,13 +1,9 @@
 package com.codecool.mightytextadventure.logic;
 
 import com.codecool.mightytextadventure.data.Level;
-import com.codecool.mightytextadventure.data.StoryCard;
 import com.codecool.mightytextadventure.data.Storyline;
-import com.codecool.mightytextadventure.data.Actions;
 import com.codecool.mightytextadventure.ui.Display;
 import com.codecool.mightytextadventure.ui.Input;
-
-import java.util.SortedMap;
 
 public class Game {
     private final Level[] levels;
@@ -34,13 +30,12 @@ public class Game {
         String actionFromUser = input.getActionFromUser();
         actionFromUser = actionFromUser.toUpperCase();
 
-        ActionManager actionManager = new ActionManager();
-        boolean validBool = actionManager.actionValidator(actionFromUser);
+        ActionValidator actionValidator = new ActionValidator();
+        boolean validBool = actionValidator.actionValidator(actionFromUser);
         System.out.println("boolean: " + validBool);
 
         ActionSelector actionSelector = new ActionSelector();
-        actionSelector.actionSelector(actionFromUser);
-
+        actionSelector.actionSelect(actionFromUser);
 
 
         return true;

@@ -10,7 +10,8 @@ public enum Storyline {
             Du lernst deine Mitstudierenden kennen und zwei sehr große Mentoren."""),
 
     UMSCHAUEN("""
-            Du schaust dich um, es gibt Tische, Stühle ... 
+            Um dich herum sind andere Menschen, außerdem siehst du ein Sofa, ein paar Schreibtische und Sessel.
+            Vor dir steht ein Notebook. Möchtest du mit jemandem REDEN oder zu etwas  GEHEN?
             """),
     REDEN("""
             Im Raum befinden sich MARTIN, EMAD, MITSTUDIERENDE und du SELBST. Mit wem möchtest du reden?\s
