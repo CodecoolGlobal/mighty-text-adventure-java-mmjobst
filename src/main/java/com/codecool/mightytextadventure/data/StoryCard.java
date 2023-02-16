@@ -5,16 +5,16 @@ public class StoryCard {
      private Storyline storyline;
      private Level level;
 
-     public void goTo(Storyline storyline, Level level) {
+     public void goTo(Storyline storyline) {
          System.out.println("text = " + storyline);
      }
 
-     public void talkTo(Actions action, Level level) {
+     public void talkTo(Actions action) {
          System.out.println("action = " + action);
      }
 
-     public void lookAround(Level level) {
-         System.out.println(Storyline.UMSCHAUEN.toString());
+     public String lookAround() {
+         return String.valueOf(Storyline.UMSCHAUEN.getText());
      }
 
     public Actions getAction() {

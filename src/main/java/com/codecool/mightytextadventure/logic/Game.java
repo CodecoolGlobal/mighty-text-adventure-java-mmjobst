@@ -40,16 +40,9 @@ public class Game {
         boolean validBool = actionManager.actionValidator(actionFromUser);
         System.out.println("boolean: " + validBool);
 
-        if (validBool) {
-            switch (Actions.valueOf(actionFromUser)) {
-                case UMSCHAUEN:
-                    return storyCard.lookAround();
-                case GEHEN:
-                    return storyCard.goTo();
-                case REDEN:
-                    return storyCard.talkTo();
-            }
-        }
+        ActionSelector actionSelector = new ActionSelector();
+        actionSelector.actionSelector(Actions.valueOf(actionFromUser));
+
 
 
         return true;
