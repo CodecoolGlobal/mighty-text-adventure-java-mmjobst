@@ -12,5 +12,11 @@ public class Input {
         return inputUser;
     }
 
+    public String getNameFromUser(){
+        Scanner scanner = new Scanner(System.in);
+        String inputName = scanner.nextLine();
+        return inputName;
+    }
+
 
 }

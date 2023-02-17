@@ -68,7 +68,7 @@ public enum Storyline {
             
             -> du öffnest JOURNEY
             -> du wirfst das Notebook aus dem FENSTER
-            -> du legst dich ins BETT
+            -> du legst dich aufs SOFA
             """),
     OVER("""
             ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣤⠀⠀⠀⢀⣴⣿⡶⠀⣾⣿⣿⡿⠟⠛⠁
@@ -138,12 +138,48 @@ public enum Storyline {
             -> du legst dich aufs SOFA und hoffst, dass dich niemand bemerkt
             """),
     TEAM("""
+            Deine Gruppe besteht aus Manuela, Chen und Julia. Sie sehen alle sehr entspannt aus als hätten sie 
+            das Teamprojekt sehr genossen...\n
+            
+            ...das macht dich zwar misstrauisch...aber du schmuggelst dich dazu, gerade reden sie über die ZIELE 
+            ihres Teamworks. 
+            """),
+    ZIELE ("""
+             Ihre Ziele waren: 
+             - eine unterhaltsame Geschichte schreiben
+             - "proper" OOP 
+             - gutes Timemanagement and Taskverteilung\n
+             
+             Hochgesteckte Ziele denkst du dir... da gabs sicher auch PROBLEME! 
+            """),
+    PROBLEME ("""
+             Ihre Probleme waren: 
+             - eine unterhaltsame Geschichte schreiben
+             - "proper" OOP 
+             - gutes Timemanagement and Taskverteilung\n
+             
+             Haha, sehr lustig... ein paar mehr DETAILS bitte!?
+            """),
+
+    PROBLEME ("""
+             Ihre Probleme waren: 
+             - eine unterhaltsame Geschichte schreiben
+             - "proper" OOP 
+             - gutes Timemanagement and Taskverteilung\n
+             
+             Haha, sehr lustig... ein paar mehr DETAILS bitte!?
             """),
 
     HINAUF("""
-
+            Du kannst noch nicht in andere Stockwerke gehen bis du dein PA bestanden hast - erst dann bist du "next level"!
+                        
+            Möchtest du dein PA jetzt gleich machen?
+            [[ja, klar!->PA JA 1]]
+            [[nope, ich schaue mich lieber noch ein bisschen um!!->PA NEIN]]
+            """),
+    TRYAGAIN("""
+            Ups, versuchs nochmal oder schreib HILFE!
             """);
-
 
 
     private final String text;
@@ -156,3 +192,5 @@ public enum Storyline {
         return text;
     }
 }
+
+
