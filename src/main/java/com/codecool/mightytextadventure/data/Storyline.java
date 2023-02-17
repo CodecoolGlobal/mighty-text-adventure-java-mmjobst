@@ -188,20 +188,6 @@ public enum Storyline {
             fürs nächste Mal?!
             """),
 
-//    ERREICHT("""
-//
-//             Ah, Sie glauben die Geschichte ist lustig...
-//            naja, sie hatten eine anstrengende Woche hinter sich...
-//
-//            Sonst hat ihnen besonders zu schaffen gemacht:
-//
-//            - "proper" OOP
-//            - gutes Timemanagement and Taskverteilung
-//
-//            Aber bevor die hier alle drei in Tränen ausbrechen fragst du sie ob sie sich auch etwas MITNEHMEN aus der Woche
-//            fürs nächste Mal?!
-//            """),
-
     MITNEHMEN("""
             Natürlich sagen sie ja, was sollen die auch sagen, ist ja mitten in der Präsentation: 
                         
