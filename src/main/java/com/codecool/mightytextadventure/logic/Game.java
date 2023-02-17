@@ -1,20 +1,15 @@
 package com.codecool.mightytextadventure.logic;
 
-import com.codecool.mightytextadventure.data.Level;
-import com.codecool.mightytextadventure.ui.Display;
-import com.codecool.mightytextadventure.ui.Input;
 import com.codecool.mightytextadventure.data.Storyline;
+import com.codecool.mightytextadventure.ui.Display;
 
 public class Game {
-    private final Level[] levels;
-    private final Input input;
     private final Display display;
 
     private final StoryElement storyElement;
+    int knowledge = 0;
 
-    public Game(Level[] levels, Input input, Display display, StoryElement storyElement) {
-        this.levels = levels;
-        this.input = input;
+    public Game(Display display, StoryElement storyElement) {
         this.display = display;
         this.storyElement = storyElement;
     }
@@ -25,8 +20,6 @@ public class Game {
             isRunning = step();
         }
     }
-
-    int knowledge = 0;
 
     private boolean step() {
         knowledge += 1;
