@@ -27,7 +27,7 @@ public enum Storyline {
 
     INNOLAB("""
             Du bist im Inno-Lab des Talent Gardens, das Prog Basic Modul läuft schon seit einiger Zeit, was willst du 
-            als Nächstes tun? Dich UMSCHAUEN, mit den anderen Personen im Raum REDEN oder HINAUF in den zweiten Stock gehen?
+            als Nächstes tun? Dich UMSCHAUEN, zu etwas GEHEN, mit den anderen Personen im Raum REDEN oder HINAUF in den zweiten Stock gehen?
             """),
 
     UMSCHAUEN("""
@@ -184,22 +184,23 @@ public enum Storyline {
              - gemeinsam zu programmieren
              - ... OOP
              
-             Ja, verständlich, aber haben sie dann überhaupt irgendwas ERREICHT von den angestrebten Zielen? 
-            """),
-
-    ERREICHT("""
-            
-             Ah, Sie glauben die Geschichte ist lustig...
-            naja, sie hatten eine anstrengende Woche hinter sich... 
-             
-            Sonst hat ihnen besonders zu schaffen gemacht: 
-            
-            - "proper" OOP 
-            - gutes Timemanagement and Taskverteilung
-                        
-            Aber bevor die hier alle drei in Tränen ausbrechen fragst du sie ob sie sich auch etwas MITNEHMEN aus der Woche 
+            Aber bevor die hier alle drei in Tränen ausbrechen fragst du sie ob sie sich auch etwas MITNEHMEN aus der Woche\s
             fürs nächste Mal?!
             """),
+
+//    ERREICHT("""
+//
+//             Ah, Sie glauben die Geschichte ist lustig...
+//            naja, sie hatten eine anstrengende Woche hinter sich...
+//
+//            Sonst hat ihnen besonders zu schaffen gemacht:
+//
+//            - "proper" OOP
+//            - gutes Timemanagement and Taskverteilung
+//
+//            Aber bevor die hier alle drei in Tränen ausbrechen fragst du sie ob sie sich auch etwas MITNEHMEN aus der Woche
+//            fürs nächste Mal?!
+//            """),
 
     MITNEHMEN("""
             Natürlich sagen sie ja, was sollen die auch sagen, ist ja mitten in der Präsentation: 
