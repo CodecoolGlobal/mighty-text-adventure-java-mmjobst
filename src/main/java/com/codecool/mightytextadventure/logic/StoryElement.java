@@ -10,9 +10,7 @@ public class StoryElement {
     Display display = new Display();
     Input input = new Input();
     public Enum getStoryElement() {
-        display.printMessage((Storyline.LINE.getText()));
-        display.printMessage("Eingabe: ");
-        String inputFromUser = input.getInputFromUser().toUpperCase();
+        String inputFromUser = input.getInputFromUser().toUpperCase().trim();
         if (inputFromUser.equals("FENSTER") || inputFromUser.equals("NIE")) {
             return Storyline.OVER;
         }
@@ -24,3 +22,5 @@ public class StoryElement {
         return Storyline.TRYAGAIN;
     }
 }
+
+

@@ -33,9 +33,14 @@ public class Game {
         Enum temp = (storyElement.getStoryElement());
         String item = String.valueOf(temp);
         if (item.equals("OVER")) {
+            display.printMessage((Storyline.LINE.getText()));
             display.printMessage((Storyline.OVER.getText()));
             return false;
+        } else if (item.equals("WISSEN")) {
+            display.printMessage((Storyline.LINE.getText()));
+            display.printMessage((Storyline.WISSEN.getText()) + knowledge);
         } else if (item.equals("HINAUF")) {
+            display.printMessage((Storyline.LINE.getText()));
             display.printMessage(Storyline.HINAUF.getText() + "Deine momentanen Wissenspunkte: " + knowledge);
             if (knowledge >= 15) {
                 display.printMessage((Storyline.LINE.getText()));

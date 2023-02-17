@@ -14,8 +14,10 @@ public class Application {
         Input input = new Input();
         StoryElement storyElement= new StoryElement();
 
+        display.printMessage((Storyline.LINE.getText()));
         display.printMessage(Storyline.HELLO.getText());
         String inputFromUser = input.getInputFromUser();
+        display.printMessage((Storyline.LINE.getText()));
         display.printMessage(inputFromUser + Storyline.AUFWACHEN.getText());
 
         Level[] levels = loadAreas();
