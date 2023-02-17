@@ -22,8 +22,11 @@ public class Application {
 
         Game game = new Game(levels, input, display, storyElement);
         game.run();
-
-        display.printMessage("Exiting from Mighty Text Adventure!");
+        display.printMessage((Storyline.LINE.getText()));
+        display.printMessage((Storyline.LINE.getText()));
+        display.printMessage("ENDE - WIR HOFFEN ES HAT EUCH GEFALLEN!");
+        display.printMessage((Storyline.LINE.getText()));
+        display.printMessage((Storyline.LINE.getText()));
     }
 
     private static Level[] loadAreas(){

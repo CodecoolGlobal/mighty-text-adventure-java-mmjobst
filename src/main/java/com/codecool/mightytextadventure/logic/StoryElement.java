@@ -2,20 +2,22 @@ package com.codecool.mightytextadventure.logic;
 
 import com.codecool.mightytextadventure.data.Storyline;
 import com.codecool.mightytextadventure.ui.Input;
+import com.codecool.mightytextadventure.ui.Display;
 
 import static com.codecool.mightytextadventure.data.Storyline.*;
 
 public class StoryElement {
-
+    Display display = new Display();
     Input input = new Input();
-
-    int knowledge = 0;
-
     public Enum getStoryElement() {
+        display.printMessage((Storyline.LINE.getText()));
+        display.printMessage("Eingabe: ");
         String inputFromUser = input.getInputFromUser().toUpperCase();
+        if (inputFromUser.equals("FENSTER") || inputFromUser.equals("NIE")) {
+            return Storyline.OVER;
+        }
         for (Storyline storyElement : values()) {
             if (storyElement.name().equals(inputFromUser)) {
-                knowledge += 1;
                 return storyElement;
             }
         }

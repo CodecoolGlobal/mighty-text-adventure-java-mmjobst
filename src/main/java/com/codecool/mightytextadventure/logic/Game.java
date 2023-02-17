@@ -26,13 +26,27 @@ public class Game {
         }
     }
 
+    int knowledge = 0;
+
     private boolean step() {
+        knowledge += 1;
         Enum temp = (storyElement.getStoryElement());
         String item = String.valueOf(temp);
-        if (item.equals("FENSTER") || item.equals("NIE")){
-            display.printMessage(Storyline.OVER.getText());
+        if (item.equals("OVER")) {
+            display.printMessage((Storyline.OVER.getText()));
             return false;
-        }else {
+        } else if (item.equals("HINAUF")) {
+            display.printMessage(Storyline.HINAUF.getText() + "Deine momentanen Wissenspunkte: " + knowledge);
+            if (knowledge >= 15) {
+                display.printMessage((Storyline.LINE.getText()));
+                display.printMessage(Storyline.WIN.getText());
+                return false;
+            } else {
+                display.printMessage((Storyline.LINE.getText()));
+                display.printMessage(Storyline.NOTYET.getText());
+            }
+        } else {
+            display.printMessage((Storyline.LINE.getText()));
             display.printMessage((Storyline.valueOf(item).getText()));
         }
         return true;
